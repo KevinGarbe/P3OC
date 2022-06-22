@@ -2,23 +2,29 @@
   --color1: #9356dc;
   --color2: #ff79da;
   --color3: #99e2d0;
+  --grey-bkgr: #f6f6f6;
+  font-family: "Roboto", sans-serif;
 }
 body {
   margin: 0 auto;
 }
 header {
-  box-shadow: 0 5px 5px grey;
+  box-shadow: 0 5px 4px lightgray;
   height: 75px;
   width: 100%;
   margin: 0;
   position: relative;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+h2 {
+  font-weight: 700;
 }
 .logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  transform: scale(0.58);
+  transform: scale(0.43);
+  position: relative;
+  top: 8px;
 }
 footer {
   background-color: #535353;
@@ -47,18 +53,21 @@ footer ul {
 }
 .intro {
   text-align: center;
-  padding: 30px 20px 30px 20px;
-  background-color: #f6f6f6;
+  padding: 50px 20px 50px 20px;
+  background-color: var(--grey-bkgr);
+  font-weight: 300;
 }
 .intro h2 {
   margin: 0;
 }
 .ExploreButton {
   width: 200px;
-  height: 35px;
+  height: 45px;
   background: linear-gradient(160deg, var(--color2), var(--color1));
   color: white;
   border-style: none;
-  border-radius: 20px;
+  border-radius: 25px;
   box-shadow: 0px 4px 4px lightgray;
+  font-weight: bold;
+  font-size: 14px;
 }
