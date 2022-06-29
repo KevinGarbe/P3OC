@@ -187,10 +187,7 @@ h1 {
 header,
 main,
 footer {
-  animation-name: opacity;
-  animation-duration: 1000ms;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
+  animation: opacity 2500ms cubic-bezier(1, -0.25, 0.93, 0.59) 1;
 }
 @keyframes opacity {
   from {
@@ -198,5 +195,42 @@ footer {
   }
   to {
     opacity: 1;
+  }
+}
+#loader {
+  border-top: 15px solid var(--color1);
+  border-bottom: 15px solid var(--color2);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1500ms linear 1;
+  position: absolute;
+  margin: auto auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  25% {
+    transform: rotate(90deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg);
+    opacity: 0.95;
+  }
+  75% {
+    transform: rotate(270deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.2;
   }
 }
