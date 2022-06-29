@@ -5,9 +5,13 @@
   --grey-bkgr: #f6f6f6;
   font-family: "Roboto", sans-serif;
 }
+html {
+  background-color: #8c8c8c;
+}
 body {
   margin: 0 auto;
   max-width: 768px;
+  background-color: white;
 }
 
 header {
@@ -178,4 +182,21 @@ h1 {
 .Logo2 {
   transform: scaleX(0.7);
   margin-right: 4px;
+}
+/* animations */
+header,
+main,
+footer {
+  animation-name: opacity;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
