@@ -7,6 +7,7 @@
 }
 body {
   margin: 0 auto;
+  max-width: 768px;
 }
 
 header {
@@ -27,13 +28,7 @@ h2 {
   position: relative;
   top: 8px;
 }
-footer {
-  background-color: #535353;
-  color: white;
-}
-footer ul {
-  list-style: none;
-}
+
 .location {
   margin-left: auto;
   margin-right: auto;
@@ -157,4 +152,30 @@ h3 {
   right: 15px;
   font-size: smaller;
   font-weight: bolder;
+}
+footer {
+  background-color: #535353;
+  color: white;
+  padding: 20px;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  margin: 8px;
+}
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-left: 10px;
+}
+.LiLogo {
+  margin-right: 10px;
+}
+.Logo2 {
+  transform: scaleX(0.7);
+  margin-right: 4px;
 }
