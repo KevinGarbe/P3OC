@@ -1,0 +1,64 @@
+:root {
+  --color1: #9356dc;
+  --color2: #ff79da;
+  --color3: #99e2d0;
+  --grey-bkgr: #f6f6f6;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  background-color: #8c8c8c;
+}
+body {
+  margin: 0 auto;
+  max-width: 768px;
+  background-color: white;
+}
+header {
+  height: 75px;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  transform: scale(0.43);
+  position: relative;
+  top: 8px;
+}
+.Arrow {
+  position: absolute;
+  left: 25px;
+  top: 35px;
+  transform: scale(1.5);
+  color: black;
+}
+
+/* footer */
+footer {
+  background-color: #535353;
+  color: white;
+  padding: 20px;
+}
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  margin: 8px;
+}
+h4 {
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+  font-weight: lighter;
+  margin-left: 10px;
+}
+.LiLogo {
+  margin-right: 10px;
+}
+.Logo2 {
+  transform: scaleX(0.7);
+  margin-right: 4px;
+}
