@@ -60,7 +60,7 @@ h2 {
 .intro h2 {
   margin: 0;
 }
-.ExploreButton {
+.Button {
   width: 200px;
   height: 45px;
   background: linear-gradient(160deg, var(--color2), var(--color1));
@@ -70,6 +70,12 @@ h2 {
   box-shadow: 0px 4px 4px lightgray;
   font-weight: bold;
   font-size: 14px;
+  cursor: pointer;
+}
+.Button:hover {
+  background: linear-gradient(175deg, var(--color2) 75%, var(--color1));
+  box-shadow: 0 8px 8px gray;
+  transition: 250ms;
 }
 .Function {
   padding: 40px 20px 40px 20px;
