@@ -102,6 +102,25 @@ h2 {
   box-shadow: 0 3px 3px lightgray;
   display: flex;
   padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  animation: 1s appear;
+}
+@keyframes appear {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.Card2 {
+  animation-delay: 100ms;
+}
+.Card3 {
+  animation-delay: 200ms;
 }
 .MenuPartCardText {
   padding: 13px;
@@ -109,9 +128,11 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-basis: 100%;
-
+  flex: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 0;
+  white-space: nowrap;
 }
 h3 {
   margin: 0;
@@ -129,6 +150,16 @@ h3 {
 .btndiv {
   display: flex;
   justify-content: center;
+}
+.CheckDiv {
+  flex: 0%;
+  color: white;
+  background-color: var(--color3);
+  font-size: 25px;
+  text-align: center;
+}
+.fa-circle-check {
+  margin: auto;
 }
 .Button {
   width: 200px;
