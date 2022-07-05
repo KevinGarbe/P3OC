@@ -40,6 +40,7 @@ main {
 .MenuRestaurantPic {
   object-fit: cover;
   width: 100%;
+  height: 300px;
 }
 .Menu {
   padding: 20px;
@@ -122,17 +123,19 @@ h2 {
 .Card3 {
   animation-delay: 200ms;
 }
+.Card4 {
+  animation-delay: 300ms;
+}
 .MenuPartCardText {
   padding: 13px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
-  white-space: nowrap;
+  flex-basis: 100%;
 }
 h3 {
   margin: 0;
@@ -152,14 +155,27 @@ h3 {
   justify-content: center;
 }
 .CheckDiv {
-  flex: 0%;
+  width: 0%;
   color: white;
   background-color: var(--color3);
   font-size: 25px;
   text-align: center;
+  justify-content: center;
+  display: flex;
+  transform: translateX(100px);
+  transition: all 500ms;
 }
 .fa-circle-check {
   margin: auto;
+  transform: rotate(360deg);
+  transition: transform 700ms;
+}
+.MenuPartCard:hover > .CheckDiv {
+  width: 20%;
+  transform: translateX(0px);
+}
+.MenuPartCard:hover .fa-circle-check {
+  transform: rotate(0deg);
 }
 .Button {
   width: 200px;

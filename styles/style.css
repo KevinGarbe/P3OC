@@ -143,6 +143,10 @@ h2 {
 h3 {
   margin: 0 0 5px 0;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 .RestaurantCard p {
   margin: 0;
 }
@@ -209,7 +213,7 @@ h4 {
 header,
 main,
 footer {
-  animation: opacity 2000ms cubic-bezier(1, -0.25, 0.93, 0.59) 1;
+  animation: opacity 1500ms cubic-bezier(1, -0.25, 0.93, 0.59) 1;
 }
 @keyframes opacity {
   from {
@@ -225,7 +229,7 @@ footer {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  animation: spin 1500ms linear 1;
+  animation: spin 1300ms linear 1;
   position: fixed;
   margin: auto auto;
   top: 0;
