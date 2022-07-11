@@ -50,22 +50,26 @@ main {
   display: flex;
   flex-direction: column;
 }
+.NomRestau {
+  display: flex;
+  justify-content: space-between;
+}
 h1 {
+  display: block;
   font-family: "Shrikhand", cursive;
   font-size: 40px;
   font-weight: lighter;
   margin: 20px 0 20px 0;
 }
 .RestaurantFav {
-  position: absolute;
-  right: 55px;
-  top: 55px;
-  transform: scale(1.8);
+  font-size: xx-large;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .RestaurantFavFull {
   position: absolute;
-  right: 0;
-  bottom: 2px;
+  right: 20px;
+  top: 52px;
   opacity: 0;
 }
 .RestaurantFavFull:hover {
@@ -102,6 +106,8 @@ h2 {
   border-radius: 20px;
   box-shadow: 0 3px 3px lightgray;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding: 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -129,21 +135,33 @@ h2 {
 .MenuPartCardText {
   padding: 13px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   margin: 0;
   flex-basis: 100%;
 }
 h3 {
-  margin: 0;
+  margin: 0 0 5px 0;
   flex-basis: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.MenuPartCardTextDesc {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .ingredient {
   margin: 0;
   font-size: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .price {
   margin: 0;
